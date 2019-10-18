@@ -5,10 +5,17 @@
 body{
     text-align: center;
     line-height: 1.5;
+    font-family:Verdana;
 }
+a{
+    text-decoration: none;
+}
+p{
+    line-height: 2;
+}
+/*---Navigation---*/
 nav,ul, footer{
     padding: 1% 0;
-    background-color: #aaa;
 }
 nav {
     top: 0;
@@ -19,6 +26,13 @@ nav {
     height: 50px;
 }
 
+.navItem{
+    display: inline;
+    text-decoration: none;
+    top:0;
+    padding-top: 0px;
+    padding-right: 20px;
+}
 .burger{
     display: none;
     text-align: right;
@@ -29,34 +43,30 @@ nav {
     position: fixed;
     top:40px;
     background-color:lightgray;
-    width: 100px;
+    width: 80px;
     text-align: right;
     right: 0;
 }
-
+/*--Header--*/
 header {
     padding: 8% 0;
     position: initial;
-}
-
-li{
-    display: inline;
-    text-decoration: none;
-    background-color: #aaa;
-    top:0;
-    padding-top: 0px;
+    padding-bottom: 10px;
 }
 
 section{
-    background-color: rgba(170, 170, 170, 0.324);
     margin-left:60px;
     margin-right:60px;
-    margin-bottom: 100px;
-    text-align: justify;
+    margin-bottom: 60px;
+    text-align: left;
+    padding: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+.greeting{
+    text-align: center;
+}
 .projects{
     text-align: center;
     margin: 0px;
@@ -74,6 +84,13 @@ section{
 
 .socialLinks{
     display: inline;
+}
+.fa {
+    color: black;
+}
+
+.fa :visited{
+    color: black;
 }
 
 @media all and (max-width: 500px){
