@@ -90,6 +90,7 @@ section{
 .emailButton{
     margin:0 0;
     background: white;
+    font-size: 16px;
     border:lightslategray solid 2px;
 }
 
