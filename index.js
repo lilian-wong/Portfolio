@@ -77,8 +77,9 @@ function getMenuItem(){
 }
 
 function getMenu(){
-    $(' .burger-menu').on('click', function(){
-        $('.menu-dropdown').toggle();
+    $('#burger').on('click', function(event){
+        console.log($('.menu').css('display'));
+            $('.menu').toggle();
     });
 }
 function addProjects(){
@@ -97,6 +98,7 @@ function refresh(){
 function loadContents(){
     startMain();
     getNavItem();
+    getMenu();
     getMenuItem();
 }
 

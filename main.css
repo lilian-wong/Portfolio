@@ -39,9 +39,11 @@ nav {
 .navList li:hover{
     font-weight: bold;
 }
+/*---Burger Menu---*/
 .burger-menu {
     display: none;
 }
+
 /*--Header--*/
 .heading-main {
     padding: 8% 0;
@@ -94,7 +96,6 @@ section{
     font-size: 16px;
     border:lightslategray solid 2px;
 }
-
 a {
     color: black;
 }
@@ -125,20 +126,21 @@ footer{
         top:0px;
         margin-top:0px;
     }
+
     .menu{
-        display: none;
         position: absolute;
+        display: none;
         background-color:white;
         min-width: 90px;
         z-index: 1;
-        top:0px;
+        top:50px;
         right:0px;
       }
       .menu-dropdown li{
-          list-style:none;
-          font-size: 18px;
-          border:lightslategray solid 2px;
-          border-bottom: none;
+        list-style:none;
+        font-size: 18px;
+        border:lightslategray solid 2px;
+        border-bottom: none;
       }
       .menu-dropdown li:last-child{
         border-bottom:lightslategray solid 2px;
@@ -148,7 +150,4 @@ footer{
           font-weight: bold;
       }
     
-    .burger-menu:hover .menu{
-        display: block;
-    }
 }
