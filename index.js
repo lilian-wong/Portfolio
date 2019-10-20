@@ -76,6 +76,11 @@ function getMenuItem(){
     });
 }
 
+function getMenu(){
+    $(' .burger-menu').on('click', function(){
+        $('.menu-dropdown').toggle();
+    });
+}
 function addProjects(){
     $('#title').append(`<p><strong>${projectsList[0].title}</strong></p>
     <p>Description: ${projectsList[0].description}</p>
