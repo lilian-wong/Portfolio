@@ -18,7 +18,7 @@ p{
 /*---Navigation---*/
 nav {
     text-align: right;
-    padding: 0px 0px;
+    padding: 10px 0px;
 }
 .navList, ul{
     margin: 0px 0px;
@@ -123,17 +123,19 @@ footer{
         font-size: 32px;
         text-align: right;
         padding: 10px;
-        top:0px;
+        top:5px;
         margin-top:0px;
     }
-
+    #close{
+        display: none;
+    }
     .menu{
         position: absolute;
         display: none;
         background-color:white;
         min-width: 90px;
         z-index: 1;
-        top:50px;
+        top:0px;
         right:0px;
       }
       .menu-dropdown li{
@@ -145,7 +147,12 @@ footer{
       .menu-dropdown li:last-child{
         border-bottom:lightslategray solid 2px;
       }
-    
+      
+      .menu-dropdown li:first-child{
+        border-top:none;
+        border-left: none;
+        border-right: none;
+      }
       .menu-dropdown li:hover{
           font-weight: bold;
       }

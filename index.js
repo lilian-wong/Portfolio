@@ -78,8 +78,13 @@ function getMenuItem(){
 
 function getMenu(){
     $('#burger').on('click', function(event){
-        console.log($('.menu').css('display'));
-            $('.menu').toggle();
+        $('.menu').toggle();
+    });
+}
+
+function closeMenu(){
+    $('.close').on('click', function(event){
+        $('.menu').toggle();
     });
 }
 function addProjects(){
@@ -99,6 +104,7 @@ function loadContents(){
     startMain();
     getNavItem();
     getMenu();
+    closeMenu();
     getMenuItem();
 }
 
