@@ -80,8 +80,8 @@ function addProjects(){
     $('#title').append(`<p><strong>${projectsList[0].title}</strong></p>
     <p>Description: ${projectsList[0].description}</p>
     <p><img src=${projectsList[0].image} class='screenshot' alt=${projectsList[0].title}></p>
-    <span><a href="${projectsList[0].repo}">REPO | </a></span>
-    <span><a href="${projectsList[0].live}">LIVE</a></span> 
+    <span><a href="${projectsList[0].repo}" target="_blank">REPO | </a></span>
+    <span><a href="${projectsList[0].live}" target="_blank">LIVE</a></span> 
     <p>Technologies used: ${projectsList[0].tech}</p>`);
 }
 
