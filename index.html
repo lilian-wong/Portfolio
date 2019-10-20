@@ -13,62 +13,45 @@
     </head>
     <body>
 <!--Top Navigation Section-->
-        <nav role="navigation">
-            <ul>
-                <li class="navItem">Bio</li>
-                <li class="navItem">Portfolio</li>
-                <li class="navItem">About</li>   
+        <nav role="navigation" class="nav">
+            <ul class="navList">
+                <li class="main-screen">&#8962;</li>   
+                <li class="bio">Bio</li>
+                <li class="portfolio">Portfolio</li>
+                <li class="about">About</li>   
             </ul>
         </nav>
-        <p class="burger">&#9776</p>
-        <div class="dropdown-menu">
-            <p class="dropdown-item">Bio</p>
-            <p class="dropdown-item">Portfolio</p>
-            <p class="dropdown-item">About</p>
+        <div class="burger-menu">&#9776; 
+            <div class="menu">
+                <ul class="menu-dropdown">
+                    <li class="main-screen">Main</li>   
+                    <li class="bio">Bio</li>
+                    <li class="portfolio">Portfolio</li>
+                    <li class="about">About</li>   
+                </ul> 
+            </div>
         </div>
+
 <!--Title-->
         <main role="main">
-            <header role="banner">
+            <header role="banner" class="heading-main">
                 <h1>Lilian Wong</h1>
                 <h3>Web Developer</h3>
             </header>    
 <!--Content--> 
-            <section class="greeting">
-                <p>Hello, my name is Lilian.</p>
-                <p>I am an analyst and web developer located in Pennsylvania.</p>
-            </section>  
-            <section>
-                <h2>Bio</h2>
-                <p> I am a web developer located in Pennsylvania. Recently, I completed the Full Stack Web Development Bootcamp at Bloc. You can find my projects in the Projects section. Currently, I am looking for a career change and becoming a Web Developer. 
-                </p>
-            </section>      
-            <section>
-                <h2>Project</h2> 
-                <section class="projects">
-                        <span class="projects-item"><a href="#">Quiz App</a></span>
-                </section>   
-                <p> Project description: This project is a quiz app. Users click to start the quiz. There is a total of 10 questions. Users will be prompted one question at a time and must answer one of the multiple choices. In the end, users would get a final score and start a new quiz.
-                </p>
-                <p>List of technologies used: HTML, CSS, and JavaScript</p>
-            </section>
-            <section>
-                <h2>About me</h2> 
-                <p> I now work as an analyst at a bank. I believe there are always different ways to solve a problem. I strive to find the most efficient way to optimize results. I am passionate about using technologies to make our life better. I also love to bake and work on mini electrical projects.
-                </p>
-            </section>
-            <div class="fixed">
-                <button class="emailButton"><a href="mailto:lilianwongai@gmail.com">Email</a></button>
-            </div>
-            <section class="socialLinks">
-                <a href="https://github.com/lilian-wong" class="fa fa-github" style="font-size:36px"></a>
-                <a href="www.linkedin.com/in/lilian-wong-913159122" class="fa fa-linkedin-square" style="font-size:36px"></a>
-                <a href="https://www.instagram.com/lilspho" class="fa fa-instagram" style="font-size:36px""></a>    
-            </section>
+            <section id="title"></section> 
+            <div class="sideWrapper"><button class="emailButton"><a href="mailto:lilianwongai@gmail.com"> Email Me</a></button></div>
+            <a href="https://github.com/lilian-wong" class="fa fa-github" style="font-size:24px"></a>
+            <a href="https://www.linkedin.com/in/lilian-wong-913159122" class="fa fa-linkedin-square" style="font-size:24px"></a>
+            <a href="https://www.instagram.com/lilspho" class="fa fa-instagram" style="font-size:24px"></a>  
         </main>
 <!--Footer-->
         <footer role="contentinfo">
-            <p>2019</p>
+
+            <p class="footer"></p>
         </footer>
-<!--js files-->
+<!--js files--> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>    
     </body>
 </html>
