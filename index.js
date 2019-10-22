@@ -116,10 +116,7 @@ function addProjects(){
 
 //Links for contact
 function addContact(){
-    $('#title').append(`<button class="emailButton"><a href="mailto:lilianwongai@gmail.com"> Email Me</a></button>
-    <a href="https://github.com/lilian-wong" target=”_blank” class="fa fa-github" style="font-size:24px"></a>
-    <a href="https://www.linkedin.com/in/lilian-wong-913159122" target=”_blank” class="fa fa-linkedin-square" style="font-size:24px"></a>
-    <a href="https://www.instagram.com/lilspho" target=”_blank” class="fa fa-instagram" style="font-size:24px"></a>`);
+    $('#title').append(`<button class="emailButton"><a href="mailto:lilianwongai@gmail.com"> Email Me</a></button>`);
 }
 
 //Setting for when scroll button appear on screen
