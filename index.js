@@ -2,15 +2,10 @@
 
 // Page Contents
 const sectionContent =[
-    {   
-        id:'bio',
-        title:'Bio',
-        content:'I am a web developer located in Pennsylvania. Recently, I completed the Full Stack Web Development Bootcamp at Bloc. You can find my projects in the Portfolio section. Currently, I am looking for a career change and becoming a Web Developer.'
-    },
     {
         id:'about',
         title:'About me',
-        content:'I work as an analyst at a bank. I believe there are always different ways to solve a problem. I strive to find the most efficient way to optimize results. I am passionate about using technologies to make our life better. I also love to bake and work on mini electrical projects.'
+        content:'I am a web developer located in Pennsylvania. I also work as an analyst at a bank. Currently, I am enrolled in the Full Stack Web Development Bootcamp at Bloc. You can find my projects in the Portfolio section. Currently, I am looking for a career change and becoming a Web Developer. I love problem-solving. I am passionate about web development. I also love to bake and work on mini electrical projects.'
     },
     {
         id:'portfolio',

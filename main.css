@@ -103,7 +103,7 @@ section{
     margin-right:auto;
 }
 
-.sideWrapper a{
+.wrapper a{
     transform: rotate(360deg);
     bottom: 100px;
     height: 100px;
