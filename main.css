@@ -7,28 +7,39 @@ body{
     text-align: center;
     line-height: 1.5;
     font-family:Verdana,sans-serif;
+    background-color:rgb(246, 252, 246);
+}
+
+header h1{
+    font-size: 36px;
 }
 
 a{
     text-decoration: none;
 }
+
 p{
     line-height: 2;
 }
+ 
 /*---Navigation---*/
 nav {
     text-align: right;
-    padding: 10px 0px;
+    padding: 0 0;
 }
-.navList, ul{
+
+.navList{
     margin: 0px 0px;
+    background-color: rgb(24, 97, 93);
+    color: honeydew;
+    padding: 10px;
 }
 .navList li{
     display: inline;
     text-decoration: none;
     top:0;
     right: 0;
-    padding-top: 0px;
+  
     padding-right: 20px;
     min-width: 50px;
 }
@@ -36,9 +47,20 @@ nav {
 .main-screen{
     font-size: 32px;
 }
+
 .navList li:hover{
     font-weight: bold;
 }
+
+#topbtn{
+    display: none;
+    right:0;
+    position: fixed;
+    bottom: 50px;
+    font-size: 30px;
+}
+
+
 /*---Burger Menu---*/
 .burger-menu {
     display: none;
@@ -81,21 +103,20 @@ section{
     margin-right:auto;
 }
 
-.sideWrapper{
-    position: fixed;
-    transform: rotate(270deg);
-    top:50px;
-    left: 0px;
-    width: 100px;
+.sideWrapper a{
+    transform: rotate(360deg);
+    bottom: 100px;
     height: 100px;
+    text-align: center;
 }
 .emailButton{
     margin:0 0;
-    background: white;
+    background-color: rgb(239, 244, 239);
     width: 120px;
     font-size: 16px;
     border:lightslategray solid 2px;
 }
+
 a {
     color: black;
 }
@@ -122,37 +143,51 @@ footer{
         display: block;
         font-size: 32px;
         text-align: right;
-        padding: 10px;
-        top:5px;
-        margin-top:0px;
+        padding:5px;
+        height: 50px;
+        background-color: rgb(24, 97, 93);
+    }
+
+    .menu-icon{
+        color: honeydew;
     }
 
     .menu{
         position: absolute;
         display: none;
-        background-color:white;
-        min-width: 90px;
-        z-index: 1;
+        background-color: rgb(24, 97, 93);
+        font-size: 0;
+        height: 50px;
         top:0px;
-        right:0px;
-      }
-      .menu-dropdown li{
+        right:0px;  
+    }
+    .burger:hover menu{
+   }
+    .menu-dropdown{
+        padding-inline-start: 0px;
+    }
+    .menu-dropdown li{
         list-style:none;
         font-size: 18px;
         border:lightslategray solid 2px;
         border-bottom: none;
-      }
-      .menu-dropdown li:last-child{
+        background-color: rgb(187, 218, 216);
+        line-height: 50px;
+    }
+
+    .menu-dropdown li:last-child{
         border-bottom:lightslategray solid 2px;
-      }
-      
-      .menu-dropdown li:first-child{
+    }  
+
+    .menu-dropdown li:first-child{
         border-top:none;
         border-left: none;
         border-right:none;
-      }
-      .menu-dropdown li:hover{
+        background-color: rgb(24, 97, 93);
+    }
+
+    .menu-dropdown li:hover{
           font-weight: bold;
-      }
+    }
     
 }

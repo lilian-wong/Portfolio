@@ -5,7 +5,7 @@ const sectionContent =[
     {   
         id:'bio',
         title:'Bio',
-        content:'I am a web developer located in Pennsylvania. Recently, I completed the Full Stack Web Development Bootcamp at Bloc. You can find my projects in the Projects section. Currently, I am looking for a career change and becoming a Web Developer.'
+        content:'I am a web developer located in Pennsylvania. Recently, I completed the Full Stack Web Development Bootcamp at Bloc. You can find my projects in the Portfolio section. Currently, I am looking for a career change and becoming a Web Developer.'
     },
     {
         id:'about',
@@ -15,7 +15,12 @@ const sectionContent =[
     {
         id:'portfolio',
         title:'Portfolio',
-        content:'Here are my projects:'
+        content:'My projects:'
+    },
+    {
+        id:'contact',
+        title:'Contact Info',
+        content:'Email: lilianwongai@gmail.com'
     }
 ];
 
@@ -31,12 +36,14 @@ let projectsList = [
     }
 ];
 
+// Front page 
 function startMain(){
     $('#title').replaceWith(`<section id=title>
     <p class="content">Hello, my name is Lilian.</p> 
     <p>I am an analyst and web developer located in Pennsylvania.</p>`); 
 }
 
+// Load page contents
 function newContent(selectedItem){
     sectionContent.forEach(function(item){
         if(item.id===selectedItem){
@@ -46,6 +53,8 @@ function newContent(selectedItem){
         }   
     }); 
 }
+
+//Toggle content info in top navigation
 function getNavItem(){ 
     $('.navList li').on('click', function(event){
         let selectedNavItem = $(this).attr('class');
@@ -57,10 +66,14 @@ function getNavItem(){
             if(selectedNavItem==='portfolio'){
                 addProjects();
             }
+            else if(selectedNavItem==='contact'){
+                addContact();
+            }
         }
     });
 }
 
+//Toggle content info in burger menu 
 function getMenuItem(){
     $('.menu-dropdown li').on('click', function(event){
         let selectedMenuItem = $(this).attr('class');
@@ -71,6 +84,9 @@ function getMenuItem(){
             newContent(selectedMenuItem);
             if(selectedMenuItem==='portfolio'){
                 addProjects();
+            }
+            else if(selectedMenuItem==='contact'){
+                addContact();
             }
         }
     });
@@ -87,6 +103,8 @@ function closeMenu(){
         $('.menu').toggle();
     });
 }
+
+// Adding projects content
 function addProjects(){
     $('#title').append(`<p><strong>${projectsList[0].title}</strong></p>
     <p>Description: ${projectsList[0].description}</p>
@@ -96,6 +114,34 @@ function addProjects(){
     <p>Technologies used: ${projectsList[0].tech}</p>`);
 }
 
+//Links for contact
+function addContact(){
+    $('#title').append(`<button class="emailButton"><a href="mailto:lilianwongai@gmail.com"> Email Me</a></button>
+    <a href="https://github.com/lilian-wong" target=”_blank” class="fa fa-github" style="font-size:24px"></a>
+    <a href="https://www.linkedin.com/in/lilian-wong-913159122" target=”_blank” class="fa fa-linkedin-square" style="font-size:24px"></a>
+    <a href="https://www.instagram.com/lilspho" target=”_blank” class="fa fa-instagram" style="font-size:24px"></a>`);
+}
+
+//Setting for when scroll button appear on screen
+function setScroll(){
+    $(window).scroll(function(event){
+    if($(window).scrollTop()>20){
+        topbtn.style.display ='block';
+    }
+    else{
+        topbtn.style.display='none';
+    }        
+    });
+}
+
+//Scroll to the top screen
+function getTop(){
+    $('topbtn').on('click', function(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;    
+    });
+
+}
 function refresh(){
     startMain();
 }
@@ -106,6 +152,8 @@ function loadContents(){
     getMenu();
     closeMenu();
     getMenuItem();
+    setScroll();
+    getTop();
 }
 
 $(loadContents);
