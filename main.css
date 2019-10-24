@@ -6,12 +6,26 @@
 body{
     text-align: center;
     line-height: 1.5;
-    font-family:Verdana,sans-serif;
     background-color:rgb(246, 252, 246);
+    font-family: 'Lemonada', cursive;
 }
 
 header h1{
-    font-size: 36px;
+    font-size: 60px;
+    padding-top:60px;
+}
+
+.main-screen{
+    font-family: 'Libre Barcode 128 Text', cursive; 
+    font-size: 32px;
+    text-align: left;
+    float: left;
+    color: honeydew;
+}
+
+.front_msg{
+    text-align: center;
+    
 }
 
 a{
@@ -25,27 +39,28 @@ p{
 /*---Navigation---*/
 nav {
     text-align: right;
-    padding: 0 0;
+    padding: 0 0;   
+    position: fixed;
+    width:100%;
 }
 
 .navList{
     margin: 0px 0px;
     background-color: rgb(24, 97, 93);
     color: honeydew;
-    padding: 10px;
+    padding-top: 20px;
+    width:100%;
+    height:80px;
+    background: #232323;
+    border-bottom-style: dotted;
 }
 .navList li{
     display: inline;
     text-decoration: none;
     top:0;
-    right: 0;
-  
+    right: 0;   
     padding-right: 20px;
     min-width: 50px;
-}
-
-.main-screen{
-    font-size: 32px;
 }
 
 .navList li:hover{
@@ -58,8 +73,12 @@ nav {
     position: fixed;
     bottom: 50px;
     font-size: 30px;
+    background: red;
+    border-radius: 50px 50px;
 }
-
+#topbtn:hover{
+    color: black;
+}
 
 /*---Burger Menu---*/
 .burger-menu {
@@ -71,12 +90,16 @@ nav {
     padding: 8% 0;
     position: initial;
     padding-bottom: 10px;
-    margin-top:60px;
+    margin-top:0px;
+}
+
+
+.front_msg, section{
+    margin-left:15%;
+    margin-right:15%;
 }
 
 section{
-    margin-left:15%;
-    margin-right:15%;
     margin-bottom: 60px;
     text-align: left;
     padding: 10px;
@@ -96,33 +119,55 @@ section{
 .projects-item{
     padding:10px;
 }
-.screenshot{
-    width: 80%;
-    height: 70%;
+#quizApp{
+    width:80%;
+    height:600px;
     margin-left:auto;
     margin-right:auto;
 }
 
-.wrapper a{
-    transform: rotate(360deg);
-    bottom: 100px;
-    height: 100px;
+.projectLinks{
+    background-color:rgb(116, 42, 116);
+    border: none;
+    color: white;
+    padding: 15px 20px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
+
+.wrapper{
+     position: fixed;
+     text-align: left;
+     top: 100px;
+}
+.wrapper a{
+    display: block;
+    height: 20px;
+    padding: 1px;
+    margin: 6px;
+    color: black;
+}
+
 .emailButton{
     margin:0 0;
+    padding: 15px 20px;
     background-color:darkturquoise;
-    width: 120px;
+    width: 180px;
     font-size: 16px;
 }
 
-a {
-    color: black;
+li a {
+    color:white;
 }
 
-a:visited{
-    color: black;
+li a:hover{
+   color:deeppink;
 }
+
 /*--Footer--*/
 footer{
     font-size: 12px;
@@ -141,17 +186,25 @@ footer{
         display:none;
     }
     .burger-menu{
-        position: relative;
+        position: fixed;
         display: block;
         font-size: 32px;
-        text-align: left;
+        text-align: right;
         padding:5px;
         padding-top: 0;
         height: 50px;
         top:0;
-        background-color: rgb(24, 97, 93);
+        padding: 10px;
+        width:100%;
+        height:60px;
+        background: #232323;
     }
-
+    .main-screen{
+        position: relative;
+        top: 10px;
+        margin-left: 0px;
+    }
+        
     .menu-icon{
         color: honeydew;
     }
@@ -159,36 +212,39 @@ footer{
     .menu{
         position: absolute;
         display: none;
-        background-color: rgb(24, 97, 93);
+        background-color: #232323;
         font-size: 0;
         height: 50px;
         top:0px;
-        left:0px;  
+        right:0px;  
     }
-
+    
+    .main-screen{
+        margin-top:0;
+    }
     .menu-dropdown{
         padding-inline-start: 0px;
     }
     .menu-dropdown li{
         list-style:none;
         font-size: 18px;
-        border:lightslategray solid 2px;
         border-bottom: none;
         background-color: rgb(187, 218, 216);
         line-height: 50px;
         padding-right: 5px;
         padding-left: 5px;
+        border-radius:50%;
     }
 
-    .menu-dropdown li:last-child{
-        border-bottom:lightslategray solid 2px;
+    .menu-dropdown a{
+        color:black;
     }  
 
     .menu-dropdown li:first-child{
         border-top:none;
         border-left: none;
         border-right:none;
-        background-color: rgb(24, 97, 93);
+        background-color: #232323;
         color:white;
     }
 
