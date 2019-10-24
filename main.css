@@ -11,8 +11,16 @@ body{
 }
 
 header h1{
-    font-size: 60px;
+    font-size: 80px;
     padding-top:60px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 rgb(245, 9, 210),
+      -1px -1px 0 rgb(49, 103, 204),  
+       1px -1px 0 rgb(155, 238, 20),
+       -1px 1px 0 rgb(255, 240, 74),
+        1px 1px 0 rgb(238, 9, 162);
 }
 
 .main-screen{
@@ -42,6 +50,7 @@ nav {
     padding: 0 0;   
     position: fixed;
     width:100%;
+
 }
 
 .navList{
@@ -73,11 +82,12 @@ nav {
     position: fixed;
     bottom: 50px;
     font-size: 30px;
-    background: red;
+    background: rgb(240, 97, 97);
     border-radius: 50px 50px;
+    color: cornsilk;
 }
 #topbtn:hover{
-    color: black;
+    background: rgb(176, 5, 5);
 }
 
 /*---Burger Menu---*/
@@ -106,8 +116,12 @@ section{
     padding-top: 10px;
     padding-bottom: 10px;
     min-height: 300px;
+    
 }
 
+section h3{
+    
+}
 #title{
     text-align: left;
 }
@@ -256,13 +270,13 @@ footer{
     .menu-dropdown li:hover{
           font-weight: bold;
     }
+    section{
+        margin-left:10%;
+        margin-right:10%;
+    }
 
     #quizApp{
-        height: 400px;
-    }
-    section{
-        margin-left:8%;
-        margin-right:8%;
+        height: 430px;
     }
     
 }
