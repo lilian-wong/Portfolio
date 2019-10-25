@@ -5,7 +5,7 @@ const sectionContent =[
     {
         id:'about',
         title:'About Me',
-        content:'I currently work as an analyst at a bank. I recently enrolled in the Full Stack Web Development Bootcamp at Bloc. You can find my projects in the Portfolio section. Currently, I am looking for a career change and becoming a Web Developer. I love problem-solving. I am passionate about web development. I also love to bake and work on mini electrical projects.'
+        content:'I am also an analyst at a bank. Recently, I enrolled in the Full Stack Web Development Bootcamp at Bloc. You can find my projects in the Portfolio section. Currently, I am looking for a career change and becoming a Web Developer. I love problem-solving. I am passionate about web development. In my spare time, I love to bake and work on mini electrical projects.'
     },
     {
         id:'portfolio',
@@ -29,12 +29,13 @@ let projectsList = [
 // Set front page 
 function startMain(){
     $('header').after(`
-    <p class="front_msg">Hello, my name is Lilian.</p> 
-    <p class="front_msg">I am an analyst and web developer located in Pennsylvania.</p>
+    <div class="seperator1">
     <section class="content" id=${sectionContent[0].id}>
     <h3>${sectionContent[0].title}</h3>
     <p>${sectionContent[0].content}</p>
-    </section>` + addProjects());  
+    </section>
+    </div>` + 
+    addProjects());  
 }
 
 function getMenu(){
@@ -52,6 +53,7 @@ function closeMenu(){
 // Adding projects content
 function addProjects(){
     return `
+    <div class="seperator2">
     <section class="content" id=${sectionContent[1].id}>
     <h3>${sectionContent[1].title}</h3>
     <p><h4>${projectsList[0].title}</h4></p>
@@ -62,8 +64,9 @@ function addProjects(){
     <p><iframe id="quizApp" title="Quiz App"
     title="quizApp" src="https://lilian-wong.github.io/quiz-app/"
     </iframe></p>
-    </section>`;
-    
+    </section>
+    </div>`;
+
 }
 
 //Setting for when scroll button appear on screen
@@ -74,7 +77,6 @@ function setScroll(){
     }
     else{
         topbtn.style.display='none';
-
     }        
     });
 }
