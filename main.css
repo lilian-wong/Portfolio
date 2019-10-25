@@ -64,7 +64,7 @@ nav {
     display: none;
     right:0;
     position: fixed;
-    bottom: 50px;
+    top: 50%;
     font-size: 30px;
     background: rgb(240, 97, 97);
     border-radius: 50px 50px;
@@ -158,7 +158,7 @@ section{
     width: 50px;
 }
 
-.wrapper, rt-wrapper{
+.wrapper{
     position: fixed;
     text-align: left;
     top: 100px;
@@ -170,7 +170,7 @@ section{
 .rt-wrapper{
     position: fixed;
     right:0;
-    top: 300px;
+    bottom: 20px;
     background: chartreuse;
     transform: skew(20deg);
     transform: rotate(20deg);
