@@ -65,7 +65,7 @@ function addProjects(){
     <p><iframe id="quizApp" title="Quiz App"
     title="quizApp" src="https://lilian-wong.github.io/quiz-app/"
     </iframe></p>
-    <div class="project_area">
+    </div>
     </section>
     </div>`;
 

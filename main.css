@@ -13,11 +13,6 @@ body{
     font-size: 16px;
 }
 
-.icon-1{
-    background-color: gainsboro;
-    width: 100px;
-    height: 100px;
-}
 header h1{
     font-family: 'Audiowide';
     font-size: 48px;
@@ -151,28 +146,26 @@ section{
 .projects{
     text-align: center;
     margin: 0px;
-
-}
-
-.projects-item{
-    padding:10px;
 }
 
 .project_area{
-    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
     direction:column;
-    all: unset;
+    padding:10px;
+    background: white;
 }
-
+    
 #quizApp{
     width:80%;
     height:500px;
     margin-left:auto;
     margin-right:auto;
+    order: 2;
 }
 
 .projectLinks{
-    background-color:rgb(116, 42, 116);
+    background-color:rgb(238, 10, 97);
     border: none;
     color: white;
     padding: 15px 20px;
