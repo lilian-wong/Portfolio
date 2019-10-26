@@ -5,7 +5,7 @@
 
 body{
     text-align: center;
-    line-height: 2;
+    line-height: 1.5;
     font-family: 'Kalam', cursive;
     background: #232323;
     color: whitesmoke;
@@ -15,8 +15,23 @@ body{
 
 header h1{
     font-family: 'Audiowide';
-    font-size: 52px;
-    padding-top:100px;
+    font-size: 48px;
+    padding-top:5%;
+}
+
+h2{
+    padding:5px;
+    font-size: 24px;
+}
+
+h3{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    background-color: yellow;
+    box-shadow: 10px 10px 2px grey;
+    color:black;
+    transform: rotate(-5deg);
 }
 
 .main-screen{
@@ -46,8 +61,9 @@ nav {
     width:100%;
     height:80px;
     background-color: whitesmoke;
-    border-bottom-style: dotted;
+    border-bottom-style: dashed;
 }
+
 .navList li{
     display: inline;
     text-decoration: none;
@@ -61,6 +77,8 @@ nav {
     font-weight: bold;
 }
 
+/*--scroll button--*/
+
 #topbtn{
     display: none;
     right:0;
@@ -71,6 +89,7 @@ nav {
     border-radius: 50px 50px;
     color: cornsilk;
 }
+
 #topbtn:hover{
     background: rgb(176, 5, 5);
 }
@@ -114,7 +133,7 @@ section{
     text-align: left;
     padding: 10px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 200px;
     min-height: 600px;
     font-size: 24px;
 }
@@ -131,6 +150,12 @@ section{
 
 .projects-item{
     padding:10px;
+}
+
+.project_area{
+    display: flex;
+    direction:column;
+    all: unset;
 }
 
 #quizApp{
@@ -174,7 +199,7 @@ section{
 .rt-wrapper{
     position: fixed;
     right:0;
-    bottom: 20px;
+    bottom: 24px;
     background: chartreuse;
     transform: skew(30deg);
     transform: rotate(30deg);
@@ -197,6 +222,7 @@ section{
     font-size: 24px;
     color: black;
 }
+
 .contact a{
     color:black;
     
@@ -224,14 +250,18 @@ footer{
     text-align: center;
 }
 
-@media all and (max-width: 600px){
-    .mytitle{
-        font-size: 32px;
-    }
-}
+/*--Screen Setting--*/
 @media all and (max-width: 500px){
     header h1{
         font-size: 24px;
+    }
+    h2{
+        font-size:16px;
+    }
+
+    h3{
+        width: 130px;
+        height: 40px;
     }
     .nav {
         display:none;
@@ -243,21 +273,25 @@ footer{
         text-align: right;
         padding:5px;
         padding-top: 0;
-        height: 50px;
+        height: 70px;
         top:0;
         padding: 10px;
         width:100%;
         height:70px;
         background: whitesmoke;
-        border-bottom-style: dotted;
+        border-bottom-style: dashed;
         color:black;
     }
+
     .main-screen{
         position: relative;
-        top: 10px;
+        top: 5px;
         margin-left: 0px;
     }
-        
+
+    .main-screen:hover{   
+        font-weight: bold; 
+    }
     .menu-icon{
         color: black;
     }
@@ -270,15 +304,12 @@ footer{
         height: 50px;
         top:0px;
         right:0px;  
-
     }
     
-    .main-screen{
-        margin-top:0;
-    }
     .menu-dropdown{
         padding-inline-start: 0px;
     }
+
     .menu-dropdown li{
         list-style:none;
         font-size: 18px;
@@ -305,6 +336,7 @@ footer{
     .menu-dropdown li:hover{
           font-weight: bold;
     }
+
     section{
         margin-left:10%;
         margin-right:10%;
@@ -314,13 +346,13 @@ footer{
     #quizApp{
         height: 300px;
     }
+
     #myEmail{
         font-size: 16px;
     }
 }
 
 @media all and (max-width: 320px){
-
     .mytitle{
         font-size: 18px;
     }

@@ -59,11 +59,13 @@ function addProjects(){
     <p><h4>${projectsList[0].title}</h4></p>
     <p>Description: ${projectsList[0].description}</p>
     <p>Technologies used: ${projectsList[0].tech}</p>
+    <div class="project_area">
     <span><a href="${projectsList[0].repo}" target="_blank" class="projectLinks">REPO</a></span>
     <span><a href="${projectsList[0].live}" target="_blank" class="projectLinks">LIVE</a></span> 
     <p><iframe id="quizApp" title="Quiz App"
     title="quizApp" src="https://lilian-wong.github.io/quiz-app/"
     </iframe></p>
+    <div class="project_area">
     </section>
     </div>`;
 
@@ -90,7 +92,7 @@ function getTop(){
 }
 
 function refresh(){
-    $('.main-screen').on('click', function(event){
+    $('.main-screen').on('click', function(){
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;    
     });
