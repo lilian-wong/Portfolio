@@ -5,7 +5,7 @@
 
 body{
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.8;
     font-family: 'Kalam', cursive;
     background: #232323;
     color: whitesmoke;
@@ -225,7 +225,7 @@ section{
 
 .contact a{
     color:black;
-    
+    font-size: 16px;
 }
 
 .contact a:hover{
@@ -252,17 +252,27 @@ footer{
 
 /*--Screen Setting--*/
 @media all and (max-width: 500px){
+    .heading-main{
+        margin-top: 5px;
+    }
     header h1{
         font-size: 24px;
     }
+
     h2{
-        font-size:16px;
+        padding-top:30px;
+        font-size:18px;
     }
 
     h3{
         width: 130px;
         height: 40px;
     }
+
+    .float-msg{
+        padding-top: 100px;
+    }
+
     .nav {
         display:none;
     }
@@ -344,20 +354,23 @@ footer{
     }
 
     #quizApp{
-        height: 300px;
+        height: 400px;
     }
 
-    #myEmail{
-        font-size: 16px;
+    .contact{
+        font-size: 14px;
     }
 }
 
 @media all and (max-width: 320px){
+    .heading-main{
+        margin-top: 15px;
+    }
     .mytitle{
         font-size: 18px;
     }
     #quizApp{
-        height: 300px;
+        height: 380px;
         width: 100%;
     }
 }
