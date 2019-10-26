@@ -9,8 +9,7 @@ body{
     font-family: 'Kalam', cursive;
     background: #232323;
     color: whitesmoke;
-    height: 100%;
-    font-size: 16px;
+    height: 100%;  
 }
 
 header h1{
@@ -275,7 +274,7 @@ footer{
     }
 
     section{
-        font-size: 22px;
+        font-size: 21px;
         margin-left:3%;
         margin-right:3%;
     }
@@ -381,7 +380,7 @@ footer{
     h3{
         width: 140px;
         height: 50px;
-        font-size:23px;
+        font-size:17px;
     }
     section{
         margin-left:1%;
