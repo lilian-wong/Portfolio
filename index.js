@@ -32,7 +32,10 @@ function startMain(){
     <div class="seperator1">
     <section class="content" id=${sectionContent[0].id}>
     <h3>${sectionContent[0].title}</h3>
-    <p>${sectionContent[0].content}</p>
+        <p>${sectionContent[0].content}</p>
+        <div>
+            <img src="images/myNameQRCode.png" alt="Lilian Wong">
+        </div>
     </section>
     </div>` + 
     addProjects());  
