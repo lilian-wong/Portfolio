@@ -19,7 +19,7 @@ body{
 .top-navigation {
     background-color: #152a4d;
     overflow: hidden;
-    height: 80px;
+    height: 100px;
 }
 
 h2, footer{
@@ -31,6 +31,7 @@ h2 {
     padding:20px;
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 70px;
     font-size: 24px;
     color: black;
     background: cornsilk;
@@ -155,7 +156,7 @@ section{
 .projectLinks{
     background-color:rgb(238, 10, 97);
     border: none;
-    color: white;
+    color:black;
     padding: 15px 20px;
     text-align: center;
     text-decoration: none;
@@ -179,7 +180,8 @@ section{
 .wrapper{
     position: fixed;
     text-align: left;
-    top: 100px;
+    top: 120px;
+    left:30px;
     width: 40px;
     background: chartreuse;
     transform: skew(7deg);
@@ -193,14 +195,19 @@ section{
     padding-bottom: 5px;
     margin: 6px;
     color: black;
+    
 }
 
+.social-links{
+    color:transparent;
+}
 /*--Footer--*/
 footer{
-    font-size: 12px;
+    font-size: 16px;
     right: 0;
     left: 0;
     text-align: center;
+    height: 100px;
 }
 
 /*--Screen Setting--*/
