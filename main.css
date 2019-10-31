@@ -22,9 +22,12 @@ body{
     height: 80px;
 }
 
+h2, footer{
+    font-family: 'Audiowide';
+    font-size: 24px;
+}
 h2 {
     animation:float 5s infinite;
-    font-family: 'Audiowide';
     padding:20px;
     margin-left: 20%;
     margin-right: 20%;
