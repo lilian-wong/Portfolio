@@ -16,43 +16,41 @@
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
-<!--Top Navigation Section-->
-        <nav class="nav">
-            <ul class="navList"> 
-                <li class="main-screen">Lilian Wong</li>    
-                <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="top-navigation">
+        <h1 class="myName">Lilian Wong</h1>
+        <nav>
+            <ol class="navList"> 
+                <li class="portfolio"><a href="#portfolio" class="portfolio-link" name="portfolio-link">Portfolio</a></li>
+            </ol>
+        </nav> 
+        </div>
+    </header>   
         <div class="burger-menu">
-            <div class="main-screen">Lilian Wong</div>
+            <div class="myName">Lilian Wong</div>
             <div class="menu-icon" id="burger">&#9776;</div>
             <div class="menu">
-                <ul class="menu-dropdown">
+                <ol class="menu-dropdown">
                     <li class="close">&#10005;</li>
-                    <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
-                </ul>   
+                    <li class="portfolio"><a href="#portfolio" class="portfolio-link" name="portfolio-link">Portfolio</a></li>
+                </ol>   
             </div>
         </div>  
-
-<!--Title-->
-        <main>  
-            <header class="heading-main">
-                <div class="float-msg"><h1 class="msg">.... . .-.. .-.. ---</h1></div>
-                <h2 class="mytitle">My name is Lilian. I am a web developer located in Pennsylvania.</h2>
-            </header>    
-<!--Content--> 
-            <div class="wrapper">
-                <a href="https://github.com/lilian-wong" target="_blank"><i class="fa fa-github" style="font-size:32px" alt="github"></i></a>
-                <a href="https://www.linkedin.com/in/lilian-wong-913159122" target="_blank"><i class="fa fa-linkedin-square" style="font-size:32px" alt="linkedin"></i></a>
-                <a href="https://www.instagram.com/lilspho" target="_blank"><i class="fa fa-instagram" style="font-size:32px" alt="instagram"></i></a> 
-                <a href="mailto:lilianwongai@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:25px" alt="envelope"></i></a> 
-            </div>
-            <a id="topbtn" href="#">&#8679;</a>
-        </main>
+    <main> 
+<!--Content-->
+        <h2 class="greeting">Hello, my name is Lilian. I am a web developer.</h2>
+        <div class="wrapper">
+            <a href="https://github.com/lilian-wong" target="_blank"><i aria-hidden="true" class="fa fa-github" style="font-size:32px"></i></a>
+            <a href="https://www.linkedin.com/in/lilian-wong-913159122" target="_blank"><i aria-hidden="true" class="fa fa-linkedin-square" style="font-size:32px"></i></a>
+            <a href="https://www.instagram.com/lilspho" target="_blank"><i aria-hidden="true" class="fa fa-instagram" style="font-size:32px"></i></a> 
+            <a href="mailto:lilianwongai@gmail.com"><i aria-hidden="true" class="fa fa-envelope" style="font-size:25px"></i></a> 
+        </div>
+        <a id="topbtn" href="#">&#8679;</a>
+    </main>
 <!--Footer-->
-        <footer>
-            <p class="footer">2019</p>
-        </footer>
+    <footer>
+        <p class="footer">2019</p>
+    </footer>
         
 <!--js files--> 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

@@ -28,13 +28,13 @@ let projectsList = [
 
 // Set front page 
 function startMain(){
-    $('header').after(`
+    $('.greeting').after(`
     <div class="seperator1">
     <section class="content" id=${sectionContent[0].id}>
     <h3>${sectionContent[0].title}</h3>
         <p>${sectionContent[0].content}</p>
         <div>
-            <img src="images/myNameQRCode.png" alt="Lilian Wong">
+            <img src="images/myNameQRCode.png" height="100" width="100" alt="Lilian Wong">
         </div>
     </section>
     </div>` + 
@@ -57,7 +57,7 @@ function closeMenu(){
 function addProjects(){
     return `
     <div class="seperator2">
-    <section class="content" id=${sectionContent[1].id}>
+    <section class="content" name=${sectionContent[1].id} id=${sectionContent[1].id}>
     <h3>${sectionContent[1].title}</h3>
     <p><h4>${projectsList[0].title}</h4></p>
     <p>Description: ${projectsList[0].description}</p>
@@ -94,20 +94,12 @@ function getTop(){
     });
 }
 
-function refresh(){
-    $('.main-screen').on('click', function(){
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;    
-    });
-}
-
 function loadContents(){
     startMain();
     getMenu();
     closeMenu();
     setScroll();
     getTop();
-    refresh();
 }
 
 $(loadContents);

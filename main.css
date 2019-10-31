@@ -7,23 +7,33 @@ body{
     text-align: center;
     line-height: 1.8;
     font-family: 'Kalam', cursive;
-    background: repeating-linear-gradient(90deg,grey, gold 20px,yellow 10px);
 }
 
-header h1{
+.myName{
+    font-family: 'Libre Barcode 128 Text', cursive; 
+    color: whitesmoke;
+    padding-left: 10px;
+    float: left;
+}
+
+.top-navigation {
+    background-color: #152a4d;
+    overflow: hidden;
+    height: 80px;
+}
+
+h2 {
+    animation:float 5s infinite;
     font-family: 'Audiowide';
-    font-size: 48px;
-    padding-top:5%;
-    color: black;
-}
-
-h2{
-    padding:5px;
+    padding:20px;
+    margin-left: 20%;
+    margin-right: 20%;
     font-size: 24px;
     color: black;
     background: cornsilk;
     border-radius: 25px;
     box-shadow: 10px 10px 10px;
+    width: auto;
 }
 
 h3{
@@ -33,51 +43,28 @@ h3{
     background-color: yellow;
     box-shadow: 10px 10px 2px grey;
     color:black;
-   
 }
 
-.main-screen{
-    font-family: 'Libre Barcode 128 Text', cursive; 
-    font-size: 32px;
-    text-align: left;
-    float: left;
-    color: black;
+.navList li{
+    list-style:none;
+    text-align: right;
+    padding-right: 20px;
+    padding-top:20px;
+    min-width: 50px;
 }
+
+.navList li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.navList li a:hover{
+    color:deeppink;
+ }
 
 a{
     text-decoration: none;
 }
- 
-/*---Navigation---*/
-nav {
-    text-align: right;
-    padding: 0 0;   
-    position: fixed;
-    width:100%;   
-}
 
-.navList{
-    margin: 0px 0px;
-    color: black;
-    padding-top: 20px;
-    width:100%;
-    height:80px;
-    background-color: whitesmoke;
-    border-bottom-style: dashed;
-}
-
-.navList li{
-    display: inline;
-    text-decoration: none;
-    top:0;
-    right: 0;   
-    padding-right: 20px;
-    min-width: 50px;
-}
-
-.navList li:hover{
-    font-weight: bold;
-}
 
 /*--scroll button--*/
 
@@ -101,18 +88,10 @@ nav {
     display: none;
 }
 
-/*--Header--*/
-.heading-main {
-    padding: 8% 0;
-    position: initial;
-    padding-bottom: 0px;
-    padding-top: 15px;
-    margin-top:0px;
-}
-
-.content, .heading-main {
-    margin-left:15%;
-    margin-right:15%;
+/*--Content--*/
+.content{
+    margin-left:5%;
+    margin-right:5%;
 }
 
 .seperator1, .seperator2{
@@ -121,7 +100,7 @@ nav {
 }
 
 .seperator1{
-    background-color:rgb(242, 247, 247);
+    background-color:#b1cdfa;
     color: rgb(10, 43, 56);
 }
 
@@ -135,9 +114,6 @@ nav {
        transform: translate(0, 20px);
     }
   }
-.float-msg{
-    animation:float 5s infinite;
-}
 
 section{
     text-align: left;
@@ -189,6 +165,7 @@ section{
 
 .projectLinks:hover{
     background-color:rgb(218, 18, 218);
+    color: white;
 }
 
 .wrapper{
@@ -215,14 +192,6 @@ section{
     color: black;
 }
 
-li a {
-    color:black;
-}
-
-li a:hover{
-   color:deeppink;
-}
-
 /*--Footer--*/
 footer{
     font-size: 12px;
@@ -233,14 +202,6 @@ footer{
 
 /*--Screen Setting--*/
 @media all and (max-width: 768px){
-    .heading-main{
-        padding-bottom: 10px;
-    }
-
-    h1{
-        font-size: 30px;
-    }
-
     h2{
         font-size:22px;
     }
@@ -251,57 +212,42 @@ footer{
         font-size:21px;
     }
 
-    .float-msg{
-        padding-top: 5px;
-    }
-
     section{
         font-size: 21px;
         margin-left:3%;
         margin-right:3%;
     }
-    .nav {
+
+    .top-navigation {
         display:none;
     }
 
     .burger-menu{
-        position: fixed;
         display: block;
         font-size: 32px;
         text-align: right;
         padding:5px;
         padding-top: 0;
-        height: 70px;
         top:0;
         padding: 10px;
         width:100%;
-        height:70px;
-        background: whitesmoke;
-        border-bottom-style: dashed;
-        color:black;
+        height:80px;
+        background-color: #152a4d;
+        color:whitesmoke;
     }
-
-    .main-screen{
-        position: relative;
-        top: 5px;
-        margin-left: 0px;
-    }
-
-    .main-screen:hover{   
-        font-weight: bold; 
-    }
+    
     .menu-icon{
-        color: black;
+        color:whitesmoke;
     }
 
     .menu{
         position: absolute;
         display: none;
-        background-color: whitesmoke;
+        background-color: #152a4d;
         font-size: 0;
-        height: 50px;
         top:0px;
         right:0px;  
+    
     }
     
     .menu-dropdown{
@@ -327,18 +273,14 @@ footer{
         border-top:none;
         border-left: none;
         border-right:none;
-        background-color: whitesmoke;
-        color:#232323;
-    }
-
-    .menu-dropdown li:hover{
-          font-weight: bold;
+        background-color:#152a4d;
+        color:whitesmoke;
+        height: 25px;
     }
 
     #quizApp{
         width: 100%;
         height: 400px;
     }
-
 }
 
