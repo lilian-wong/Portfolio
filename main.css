@@ -23,8 +23,8 @@ body{
     margin-top:0;
     margin-bottom: 0;
     padding-bottom: 0;
-    padding: 30px;
-    font-size: 60px;
+    padding: 20px;
+    font-size: 78px;
     color: black;
     width: auto;
 }
@@ -100,6 +100,7 @@ a{
     color:black;
     margin-top:0;
     padding-top:0px;
+    margin-bottom:20px;
 }
 
 /*---project---*/
@@ -132,7 +133,6 @@ section{
     flex-wrap: wrap;
     direction:column;
     padding:10px;
-  
 }
     
 #quizApp{
@@ -152,7 +152,7 @@ section{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 1px 1px;
+    margin: 5px 5px;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -163,7 +163,6 @@ section{
 }
 
 .wrapper{
-    shape-outside: content-box;
     width: 50px;
 }
 
@@ -287,6 +286,7 @@ section{
     }
     .name-icon {
         font-size: 130px;
+        padding:40px;
     }
     
     .front-title{
@@ -340,5 +340,8 @@ section{
         margin-right:5%;
         font-size: 24px;
     }
-
+    .seperator1{
+        padding-bottom:100px;
+    }
+    
 }

@@ -5,7 +5,7 @@ const sectionContent =[
     {
         id:'about',
         title:'About Me',
-        content:'I am also an analyst at a bank. Recently, I enrolled in the Full Stack Web Development Bootcamp at Bloc. You can find my projects in the Portfolio section. Currently, I am looking for a career change and becoming a Web Developer. I love problem-solving. I am passionate about web development. In my spare time, I love to bake and work on mini electrical projects.'
+        content:'My name is Lilian. I am a web developer. I am also an analyst at a bank. Recently, I enrolled in the Full Stack Web Development Bootcamp at Bloc. You can find my projects in the Portfolio section. Currently, I am looking for a career change and becoming a Web Developer. I love problem-solving. I am passionate about web development. In my spare time, I love to bake and work on mini electrical projects.'
     },
     {
         id:'portfolio',
@@ -62,9 +62,9 @@ function addProjects(){
     <div class="project_area">
     <span><a href="${projectsList[0].repo}" target="_blank" class="projectLinks">REPO</a></span>
     <span><a href="${projectsList[0].live}" target="_blank" class="projectLinks">LIVE</a></span> 
-    <p><iframe id="quizApp" title="Quiz App"
+    <iframe id="quizApp" title="Quiz App"
     title="quizApp" src="https://lilian-wong.github.io/quiz-app/"
-    </iframe></p>
+    </iframe>
     </div>
     </section>
     </div>`;
