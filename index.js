@@ -28,12 +28,15 @@ let projectsList = [
 
 // Set front page 
 function startMain(){
-    $('.greeting').after(`
+    $('.msg').after(`
     <div class="seperator1">
     <section class="content" id=${sectionContent[0].id}>
-    <h3>${sectionContent[0].title}</h3>
+    <h3 class="section-title">${sectionContent[0].title}</h3>
         <p>${sectionContent[0].content}</p>
-        <img src='images/contactQR.png' class='qrCode' alt='contact-QRCode'>
+        <div class='about_img_container'>
+        <img src='images/contactQR.png' class='about-pic' alt='contact-QRCode'>
+        <img src='images/coffee_img.png' class='about-pic' alt='coffee pic'>   
+        <div> 
     </section>
     </div>` + 
     addProjects());  
@@ -56,7 +59,7 @@ function addProjects(){
     return `
     <div class="seperator2">
     <section class="content" name=${sectionContent[1].id} id=${sectionContent[1].id}>
-    <h3>${sectionContent[1].title}</h3>
+    <h3 class="section-title">${sectionContent[1].title}</h3>
     <h4>${projectsList[0].title}</h4>
     <h4>Description: ${projectsList[0].description}</h4>
     <h4>Technologies used: ${projectsList[0].tech}</h4>
