@@ -33,9 +33,7 @@ function startMain(){
     <section class="content" id=${sectionContent[0].id}>
     <h3>${sectionContent[0].title}</h3>
         <p>${sectionContent[0].content}</p>
-        <div>
-            <img src="images/myNameQRCode.png" height="100" width="100" alt="Lilian Wong">
-        </div>
+        <img src='images/contactQR.png' class='qrCode' alt='contact-QRCode'>
     </section>
     </div>` + 
     addProjects());  
@@ -59,9 +57,9 @@ function addProjects(){
     <div class="seperator2">
     <section class="content" name=${sectionContent[1].id} id=${sectionContent[1].id}>
     <h3>${sectionContent[1].title}</h3>
-    <p><h4>${projectsList[0].title}</h4></p>
-    <p>Description: ${projectsList[0].description}</p>
-    <p>Technologies used: ${projectsList[0].tech}</p>
+    <h4>${projectsList[0].title}</h4>
+    <h4>Description: ${projectsList[0].description}</h4>
+    <h4>Technologies used: ${projectsList[0].tech}</h4>
     <div class="project_area">
     <span><a href="${projectsList[0].repo}" target="_blank" class="projectLinks">REPO</a></span>
     <span><a href="${projectsList[0].live}" target="_blank" class="projectLinks">LIVE</a></span> 

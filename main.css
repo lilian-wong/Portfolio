@@ -7,6 +7,8 @@ body{
     text-align: center;
     line-height: 1.8;
     font-family: 'Kalam', cursive;
+    background: whitesmoke;
+
 }
 
 .myName{
@@ -20,6 +22,9 @@ body{
     background-color: #152a4d;
     overflow: hidden;
     height: 100px;
+    border-bottom-style: dashed;
+    border-color: ghostwhite;
+    border-width: 10px;
 }
 
 h2, footer{
@@ -94,23 +99,32 @@ a{
 
 /*--Content--*/
 .content{
-    margin-left:5%;
-    margin-right:5%;
+    margin-left:10%;
+    margin-right:10%;
 }
 
 .seperator1, .seperator2{
     border-radius: 50px;
-    margin: 25px;
+    margin: 6%;
 }
 
+/*---content---*/
 .seperator1{
-    background-color:#b1cdfa;
-    color: rgb(10, 43, 56);
-}
+    background: linear-gradient(217deg,black,grey 90.71%),
+    linear-gradient(127deg,grey, darkgray 70.71%),
+    linear-gradient(336deg, black,black 20.71%);
+    transform:skewX(2deg);
+    color:whitesmoke;
 
+}
+.qrCode{
+    height: 100px;
+}
+/*---project---*/
 .seperator2{
     background-color: rgb(10, 43, 56);
     color:white;
+    transform: rotate(2deg);
 }
 
 @keyframes float {
@@ -181,7 +195,7 @@ section{
     position: fixed;
     text-align: left;
     top: 120px;
-    left:30px;
+    left:12px;
     width: 40px;
     background: chartreuse;
     transform: skew(7deg);
@@ -213,7 +227,7 @@ footer{
 /*--Screen Setting--*/
 @media all and (max-width: 768px){
     h2{
-        font-size:22px;
+        font-size:18px;
     }
 
     h3{
@@ -244,6 +258,9 @@ footer{
         height:80px;
         background-color: #152a4d;
         color:whitesmoke;
+        border-bottom-style: dashed;
+        border-color: ghostwhite;
+        border-width: 6px;
     }
     
     .menu-icon{
