@@ -33,10 +33,6 @@ function startMain(){
     <section class="content" id=${sectionContent[0].id}>
     <h3 class="section-title">${sectionContent[0].title}</h3>
         <p>${sectionContent[0].content}</p>
-        <div class='about_img_container'>
-        <img src='images/contactQR.png' class='about-pic' alt='contact-QRCode'>
-        <img src='images/coffee_img.png' class='about-pic' alt='coffee pic'>   
-        <div> 
     </section>
     </div>` + 
     addProjects());  

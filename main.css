@@ -20,13 +20,18 @@ body{
 
 .name-icon {
     font-family: 'Pacifico', cursive;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-top:0;
     margin-bottom: 0;
     padding-bottom: 0;
+    padding: 30px;
     font-size: 60px;
     color: black;
     width: auto;
+}
+.contact-QRCode{
+    height:50px;
+    width:50px;
+    margin-top:60px;
 }
 
 .front-title{
@@ -36,13 +41,17 @@ body{
     padding-top:0;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+
 .msg{
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
     margin:20px;
 }
-
-
 
 a{
     text-decoration: none;
@@ -92,18 +101,11 @@ a{
     margin-top:0;
     padding-top:0px;
 }
-.about-pic{
-    height: 100px;
-    padding: 10px;
-}
-.about_img_container{
-    display: flex;
-    justify-content:center;
-}
+
 /*---project---*/
 .seperator2{
     border-radius: 15px 50px;
-    border: 3px solid dimgray;
+    border: 10px solid dimgray;
     border-style: groove;
     color:black;
 }
@@ -199,83 +201,82 @@ footer{
     height: 100px;
 }
 
-    h2{
-        font-size:160px;
-    }
+h2{
+    font-size:160px;
+}
 
-    h3{
-        width: 140px;
-        height: 50px;
-        font-size:21px;
-    }
+h3{
+    width: 140px;
+    height: 50px;
+    font-size:21px;
+}
 
-    section{
-        font-size: 21px;
-        margin-left:3%;
-        margin-right:3%;
-    }
+section{
+    font-size: 21px;
+    margin-left:3%;
+    margin-right:3%;
+}
 
-    .top-navigation {
+.top-navigation {
         display:none;
-    }
+}
 
-    .burger-menu{
-        display: block;
-        font-size: 32px;
-        text-align: right;
-        padding:5px;
-        padding-top: 0;
-        top:0;
-        padding: 10px;
-        width:100%;
-        height:80px;
-        color:black;
-        background: whitesmoke;
-    }
+.burger-menu{
+    display: block;
+    font-size: 32px;
+    text-align: right;
+    padding:5px;
+    padding-top: 0;
+    top:0;
+    padding: 10px;
+    width:100%;
+    height:80px;
+    color:black;
+    background: whitesmoke;
+}
     
-    .menu-icon{
-        color:black;
-    }
+.menu-icon{
+    color:black;
+}
 
-    .menu{
-        position: absolute;
-        display: none;
-        font-size: 0;
-        top:0px;
-        right:0px;  
-        
-    }
+.menu{
+    position: absolute;
+    display: none;
+    font-size: 0;
+    top:0px;
+    right:0px;  
+}
     
-    .menu-dropdown{
-        padding-inline-start: 0px;
-    }
+.menu-dropdown{
+    padding-inline-start: 0px;
+}
 
-    .menu-dropdown li{
-        list-style:none;
-        font-size: 18px;
-        border-bottom: none;
-        line-height: 50px;
-        padding-right: 5px;
-        padding-left: 5px;
-        background: whitesmoke;
-    }
+.menu-dropdown li{
+    list-style:none;
+    font-size: 18px;
+    border-bottom: none;
+    line-height: 50px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background: whitesmoke;
+}
 
-    .menu-dropdown a{
-        color:black;
-    }  
+.menu-dropdown a{
+    color:black;
+}  
 
-    .menu-dropdown li:first-child{
-        border-top:none;
-        border-left: none;
-        border-right:none;
-        color:black;
-        height: 25px;
-    }
+.menu-dropdown li:first-child{
+    border-top:none;
+    border-left: none;
+    border-right:none;
+    color:black;
+    height: 25px;
+}
 
-    #quizApp{
-        width: 100%;
-        height: 400px;
-    }
+#quizApp{
+    width: 100%;
+    height: 400px;
+}
 
 @media all and (min-width: 768px){
 /*---Burger Menu---*/
@@ -290,6 +291,12 @@ footer{
     
     .front-title{
         font-size: 32px;
+    }
+
+    .contact-QRCode{
+        height:100px;
+        width:100px;
+        margin-top:100px;
     }
 
     .burger-menu {
@@ -322,10 +329,6 @@ footer{
     .wrapper{
         top: 120px;
         
-    }
-    .about-pic{
-        height: 190px;
-        padding: 30px;
     }
     .section-title{
         width: 150px;
