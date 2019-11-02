@@ -91,12 +91,19 @@ function getTop(){
     });
 }
 
+function getPortfolio(){
+    $('.portfolio-link').on('click',function(){
+        let link = document.getElementById('portfolio');
+        link.scrollIntoView();
+    });
+}
 function loadContents(){
     startMain();
     getMenu();
     closeMenu();
     setScroll();
     getTop();
+    getPortfolio();
 }
 
 $(loadContents);

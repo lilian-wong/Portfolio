@@ -8,7 +8,6 @@ body{
     line-height: 1.8;
     font-family: 'Kalam', cursive;
     background:  whitesmoke;
-
 }
 
 .myName{
@@ -20,18 +19,20 @@ body{
 
 .name-icon {
     font-family: 'Pacifico', cursive;
-    margin-top:0;
+    margin-top:20px;
     margin-bottom: 0;
     padding-bottom: 0;
-    padding: 20px;
-    font-size: 78px;
+    padding-left: 30px;
+    font-size: 70px;
     color: black;
     width: auto;
 }
+
 .contact-QRCode{
     height:50px;
     width:50px;
     margin-top:60px;
+    margin: 50px;
 }
 
 .front-title{
@@ -39,6 +40,10 @@ body{
     font-size: 24px;
     margin:0px 0px;
     padding-top:0;
+}
+
+.my-email{
+    font-size: 14px;
 }
 
 .container{
@@ -55,8 +60,8 @@ body{
 
 a{
     text-decoration: none;
+    color:black;
 }
-
 
 /*--scroll button--*/
 
@@ -147,7 +152,7 @@ section{
     background-color:rgb(238, 10, 97);
     border: none;
     color:black;
-    padding: 15px 20px;
+    padding: 15px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -296,9 +301,16 @@ section{
     .contact-QRCode{
         height:100px;
         width:100px;
-        margin-top:100px;
+        margin-top:125px;
     }
 
+    .msg{
+        font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 20px;
+    }
+    
     .burger-menu {
         display: none;
     }
@@ -322,7 +334,7 @@ section{
         text-decoration: none;
         color: black;
     }
-    .navList li a:hover{
+    .navList li:hover{
         color:deeppink;
      }
 
