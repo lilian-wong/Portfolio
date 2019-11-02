@@ -5,7 +5,7 @@ const sectionContent =[
     {
         id:'about',
         title:'About Me',
-        content:'My name is Lilian. I am a web developer. I am also an analyst at a bank. Recently, I enrolled in the Full Stack Web Development Bootcamp at Bloc. You can find my projects in the Portfolio section. Currently, I am looking for a career change and becoming a Web Developer. I love problem-solving. I am passionate about web development. In my spare time, I love to bake and work on mini electrical projects.'
+        content:'My name is Lilian. I am a web developer and works as an analyst at a bank. Recently, I enrolled in the Full Stack Web Development Bootcamp at Bloc. You can find my projects in the Portfolio section. Currently, I am looking for a career change and becoming a Web Developer. I love problem-solving. I am passionate about web development. In my spare time, I love to bake and work on mini electrical projects.'
     },
     {
         id:'portfolio',
@@ -28,7 +28,7 @@ let projectsList = [
 
 // Set front page 
 function startMain(){
-    $('.msg').after(`
+    $('.morse-code_msg').after(`
     <div class="seperator1">
     <section class="content" id=${sectionContent[0].id}>
     <h3 class="section-title">${sectionContent[0].title}</h3>

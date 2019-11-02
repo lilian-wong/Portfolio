@@ -17,22 +17,27 @@ body{
     float: left;
 }
 
+.container{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
 .name-icon {
     font-family: 'Pacifico', cursive;
-    margin-top:20px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding-left: 30px;
+    padding-left: 20px;
     font-size: 70px;
     color: black;
     width: auto;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top: 0px;
 }
 
 .contact-QRCode{
     height:50px;
     width:50px;
-    margin-top:60px;
-    margin: 50px;
+    padding-left: 15px;
 }
 
 .front-title{
@@ -44,12 +49,6 @@ body{
 
 .my-email{
     font-size: 14px;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-
 }
 
 .msg{
@@ -92,8 +91,7 @@ a{
 }
 
 .content{
-    margin-left:15%;
-    margin-right:5%;
+    margin-left:10%;
     font-size: 16px;
 }
 
@@ -106,6 +104,10 @@ a{
     margin-top:0;
     padding-top:0px;
     margin-bottom:20px;
+    border-style:double;
+    border-color: grey;
+    border-width: 5px;
+    border-radius: 50px;
 }
 
 /*---project---*/
@@ -174,12 +176,12 @@ section{
 .wrapper{
     position: fixed;
     text-align: left;
-    top: 60px;
-    left:12px;
-    width: 40px;
+    top: 25%;
+    left:5px;
+    width: 30px;
     background: chartreuse;
     transform: skew(7deg);
-    box-shadow: 10px 10px 2px black;
+    box-shadow: 8px 6px 2px black;
     size: auto;
 }
 
@@ -188,8 +190,6 @@ section{
     height: 30px;
     padding-bottom: 5px;
     margin: 6px;
-    color: black;
-    
 }
 
 .social-links{
@@ -339,7 +339,7 @@ section{
      }
 
     .wrapper{
-        top: 120px;
+        top: 50%;
         
     }
     .section-title{
@@ -347,11 +347,13 @@ section{
         height: 50px;
         padding: 5px;
     }
+
     .content{
         margin-left:5%;
         margin-right:5%;
         font-size: 24px;
     }
+
     .seperator1{
         padding-bottom:100px;
     }
