@@ -51,11 +51,6 @@ body{
     font-size: 14px;
 }
 
-.msg{
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
-    margin:20px;
-}
 
 a{
     text-decoration: none;
@@ -143,11 +138,10 @@ section{
 }
     
 #quizApp{
-    width:80%;
+    width:100%;
     height:500px;
     margin-left:auto;
     margin-right:auto;
-    order: 2;
 }
 
 .projectLinks{
@@ -277,11 +271,6 @@ section{
     height: 25px;
 }
 
-#quizApp{
-    width: 100%;
-    height: 400px;
-}
-
 @media all and (min-width: 768px){
 /*---Burger Menu---*/
     .myName{
@@ -294,6 +283,12 @@ section{
         padding:40px;
     }
     
+
+    #quizApp{
+        width: 90%;
+        height: 700px;
+    }
+
     .front-title{
         font-size: 32px;
     }

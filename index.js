@@ -62,9 +62,9 @@ function addProjects(){
     <div class="project_area">
     <span><a href="${projectsList[0].repo}" target="_blank" class="projectLinks">REPO</a></span>
     <span><a href="${projectsList[0].live}" target="_blank" class="projectLinks">LIVE</a></span> 
-    <iframe id="quizApp" title="Quiz App"
-    title="quizApp" src="https://lilian-wong.github.io/quiz-app/"
-    </iframe>
+    <img id="quizApp" title="Quiz App"
+    title="quizApp" src="${projectsList[0].image}"
+    </img>
     </div>
     </section>
     </div>`;
