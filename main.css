@@ -137,7 +137,7 @@ section{
     padding:10px;
 }
     
-#quizApp{
+.portfolio-screenshot{
     width:100%;
     height:500px;
     margin-left:auto;
@@ -272,6 +272,7 @@ section{
 }
 
 @media all and (min-width: 768px){
+
 /*---Burger Menu---*/
     .myName{
         padding-left: 20px;
@@ -284,13 +285,18 @@ section{
     }
     
 
-    #quizApp{
-        width: 90%;
+    .portfolio-screenshot{
+        width: 620px;
         height: 700px;
     }
 
     .front-title{
         font-size: 32px;
+    }
+
+    .projectLinks{
+        width: 200px;
+        margin: 10px;
     }
 
     .contact-QRCode{

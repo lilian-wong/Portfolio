@@ -22,7 +22,17 @@ let projectsList = [
         tech:'HTML, CSS, and JavaScript',
         live:'https://lilian-wong.github.io/quiz-app/',
         repo:'https://github.com/lilian-wong/quiz-app',
-        image: 'images/quizAppScreen.png'
+        image: 'images/quizAppScreen.png',
+        id: 'quizApp'
+    },
+    {
+        title:'WhatsToday App',
+        description:'This project is called WhatsTodayApp. Users find the today\'s date along with a calendar for the current month. Users can also search for the holidays and look at the Astronomy Picture of the Day.',
+        tech:'HTML, CSS, and JavaScript, jQuery',
+        live:'https://lilian-wong.github.io/WhatsToday-API/',
+        repo:'https://github.com/lilian-wong/WhatsToday-API',
+        image: 'images/whatsToday.png',
+        id: 'whatsTodayApp'
     }
 ];
 
@@ -52,23 +62,25 @@ function closeMenu(){
 
 // Adding projects content
 function addProjects(){
-    return `
+    let allProjects = `
     <div class="seperator2">
     <section class="content" name=${sectionContent[1].id} id=${sectionContent[1].id}>
-    <h3 class="section-title">${sectionContent[1].title}</h3>
-    <h4>${projectsList[0].title}</h4>
-    <h4>Description: ${projectsList[0].description}</h4>
-    <h4>Technologies used: ${projectsList[0].tech}</h4>
+    <h3 class="section-title">${sectionContent[1].title}</h3>`;
+
+    for (let count=0; count<projectsList.length; count++){
+    allProjects = allProjects + `
+    <h4>${projectsList[count].title}</h4>
+    <h4>Description: ${projectsList[count].description}</h4>
+    <h4>Technologies used: ${projectsList[count].tech}</h4>
     <div class="project_area">
-    <span><a href="${projectsList[0].repo}" target="_blank" class="projectLinks">REPO</a></span>
-    <span><a href="${projectsList[0].live}" target="_blank" class="projectLinks">LIVE</a></span> 
-    <img id="quizApp" title="Quiz App"
-    title="quizApp" src="${projectsList[0].image}"
+    <span><a href="${projectsList[count].repo}" target="_blank" class="projectLinks">REPO</a></span>
+    <span><a href="${projectsList[count].live}" target="_blank" class="projectLinks">LIVE</a></span> 
+    <img id="${projectsList[count].id}" class="portfolio-screenshot" title="${projectsList[count].title}" src="${projectsList[count].image}">
     </img>
     </div>
-    </section>
-    </div>`;
-
+    `}
+    allProjects = allProjects + ` </section></div>`;
+    return allProjects;
 }
 
 //Setting for when scroll button appear on screen
